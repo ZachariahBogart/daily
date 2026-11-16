@@ -1,0 +1,469 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-16T14:54:35.076Z",
+  "title": "Design System: Daily",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Cool Paper",
+        "canonical": "#F6F7F5",
+        "dark": "#141516",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252524",
+          "#424241",
+          "#616160",
+          "#828381",
+          "#A4A5A4",
+          "#C9C9C8",
+          "#EEEEEE"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "White Sheet",
+        "canonical": "#FFFFFF",
+        "dark": "#1C1D20",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#1C1D1F",
+        "dark": "#ECEDEA",
+        "tonalRamp": [
+          "#0B0B0C",
+          "#242526",
+          "#414243",
+          "#606163",
+          "#818285",
+          "#A4A5A7",
+          "#C8C9CA",
+          "#EEEEEF"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "canonical": "#505258",
+        "dark": "#A7A9AE",
+        "tonalRamp": [
+          "#0B0B0C",
+          "#242527",
+          "#404246",
+          "#5F6167",
+          "#808288",
+          "#A3A5A9",
+          "#C8C9CC",
+          "#EEEEF0"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#E3E4DF",
+        "dark": "#2A2C30",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#252523",
+          "#42423F",
+          "#61625E",
+          "#82837F",
+          "#A5A5A2",
+          "#C9C9C7",
+          "#EEEEED"
+        ]
+      },
+      "rule-strong": {
+        "role": "neutral",
+        "displayName": "Strong Hairline",
+        "canonical": "#BFC1BB",
+        "dark": "#4A4C52",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#252523",
+          "#41423F",
+          "#60625D",
+          "#81837E",
+          "#A4A6A2",
+          "#C8C9C7",
+          "#EEEFED"
+        ]
+      },
+      "empty": {
+        "role": "neutral",
+        "displayName": "Empty Square",
+        "canonical": "#DFE0DB",
+        "dark": "#2E3034",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#252523",
+          "#42423F",
+          "#61625E",
+          "#82837F",
+          "#A5A5A2",
+          "#C9C9C7",
+          "#EEEEED"
+        ]
+      },
+      "green": {
+        "role": "primary",
+        "displayName": "Share Green",
+        "canonical": "#2F9E57",
+        "tonalRamp": [
+          "#001004",
+          "#012E12",
+          "#025025",
+          "#057538",
+          "#3A9859",
+          "#74B785",
+          "#A8D7B3",
+          "#DCF7E1"
+        ]
+      },
+      "green-ink": {
+        "role": "primary",
+        "displayName": "Deep Share Green",
+        "canonical": "#1E7A3F",
+        "dark": "#5FCB86",
+        "tonalRamp": [
+          "#020F05",
+          "#092D15",
+          "#174E29",
+          "#25723E",
+          "#4A955F",
+          "#7DB589",
+          "#AED5B5",
+          "#DFF5E3"
+        ]
+      },
+      "today": {
+        "role": "secondary",
+        "displayName": "Today Ochre",
+        "canonical": "#A8740F",
+        "dark": "#E0A82E",
+        "tonalRamp": [
+          "#130900",
+          "#352000",
+          "#5B3B00",
+          "#845700",
+          "#A7792B",
+          "#C39E68",
+          "#DFC59F",
+          "#FCECD6"
+        ]
+      },
+      "danger": {
+        "role": "tertiary",
+        "displayName": "Alarm Red",
+        "canonical": "#B3261E",
+        "dark": "#E5574D",
+        "tonalRamp": [
+          "#1B0302",
+          "#460E0A",
+          "#761E17",
+          "#A92F26",
+          "#D15547",
+          "#E88678",
+          "#FCB4AA",
+          "#FFE3DC"
+        ]
+      },
+      "band": {
+        "role": "neutral",
+        "displayName": "Ink Band",
+        "canonical": "#1C1D1F",
+        "dark": "#26272A",
+        "tonalRamp": [
+          "#0B0B0C",
+          "#242526",
+          "#414243",
+          "#606163",
+          "#818285",
+          "#A4A5A7",
+          "#C8C9CA",
+          "#EEEEEF"
+        ]
+      },
+      "band-2": {
+        "role": "neutral",
+        "displayName": "Band Raised",
+        "canonical": "#2A2B2E",
+        "dark": "#36373B",
+        "tonalRamp": [
+          "#0B0B0C",
+          "#242526",
+          "#414244",
+          "#606164",
+          "#818285",
+          "#A4A5A7",
+          "#C8C9CB",
+          "#EEEEEF"
+        ]
+      },
+      "on-band": {
+        "role": "neutral",
+        "displayName": "On Band",
+        "canonical": "#F6F7F5",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252524",
+          "#424241",
+          "#616160",
+          "#828381",
+          "#A4A5A4",
+          "#C9C9C8",
+          "#EEEEEE"
+        ]
+      },
+      "on-band-2": {
+        "role": "neutral",
+        "displayName": "On Band Muted",
+        "canonical": "#B4B6BB",
+        "tonalRamp": [
+          "#0B0B0C",
+          "#242527",
+          "#414245",
+          "#5F6165",
+          "#808286",
+          "#A4A5A8",
+          "#C8C9CB",
+          "#EEEEF0"
+        ]
+      },
+      "amber": {
+        "role": "secondary",
+        "displayName": "Band Amber",
+        "canonical": "#E0A82E",
+        "tonalRamp": [
+          "#130900",
+          "#352000",
+          "#5C3B00",
+          "#855700",
+          "#A97900",
+          "#C49F59",
+          "#E0C596",
+          "#FCEDD1"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "brand": {
+        "displayName": "Brand",
+        "purpose": "The Daily wordmark and the amber remaining-count figure in the band."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Game names, sheet headings and streak figures."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default text and every input (16px avoids phone zoom); tabular numerals page-wide."
+      },
+      "section": {
+        "displayName": "Section",
+        "purpose": "Group headings and the Play button label."
+      },
+      "action": {
+        "displayName": "Action",
+        "purpose": "Outline, solid, danger and ghost button labels."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Chips, form labels and errors."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Site host and streak unit."
+      },
+      "tag": {
+        "displayName": "Tag",
+        "purpose": "The outlined lowercase 'yours' badge on personal games."
+      }
+    },
+    "shadows": [
+      {
+        "name": "ring-outline",
+        "value": "inset 0 0 0 1.5px var(--rule-strong)",
+        "purpose": "Border stand-in for outline buttons and the ghost Play; not elevation."
+      },
+      {
+        "name": "ring-today",
+        "value": "inset 0 0 0 2px var(--today)",
+        "purpose": "Outline on today's unplayed square."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The single exponential ease-out for every transition and animation."
+      },
+      {
+        "name": "stamp",
+        "value": "scale 1.45 to 1, 0.42s",
+        "purpose": "Today's square and the newest tally square when marked played."
+      },
+      {
+        "name": "glide",
+        "value": "view transition, 0.45s",
+        "purpose": "Row moving between To play and Played today."
+      },
+      {
+        "name": "wall",
+        "value": "stamp 0.5s, 45ms stagger",
+        "purpose": "All-played wall of green squares filling in."
+      },
+      {
+        "name": "state",
+        "value": "0.2s (chips), 0.25s (today square)",
+        "purpose": "Colour and ring changes."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "none",
+        "purpose": "All animation and transitions removed under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "860px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Play Button",
+      "kind": "button",
+      "refersTo": "button-play",
+      "description": "Solid ink launch button at the thumb edge of every unplayed row.",
+      "html": "<a class=\"ds-play\" href=\"#\">Play <svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M14 5h5v5\"/><path d=\"M19 5l-8 8\"/><path d=\"M17 14v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h4\"/></svg></a>",
+      "css": ".ds-ico { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.25; stroke-linecap: round; stroke-linejoin: round; flex: none; } .ds-play { font-family: Figtree, system-ui, sans-serif; display: inline-flex; align-items: center; gap: 6px; height: 44px; padding-inline: 16px 14px; border-radius: 8px; background: var(--ink, #1C1D1F); color: var(--ground, #F6F7F5); font-weight: 800; font-size: 15px; text-decoration: none; } .ds-play:hover { opacity: 0.88; } .ds-play:focus-visible { outline: 2px solid var(--ink, #1C1D1F); outline-offset: 2px; }"
+    },
+    {
+      "name": "Again Button",
+      "kind": "button",
+      "refersTo": "button-play-ghost",
+      "description": "Ghost Play shown once a game is played today; also the outline secondary button style.",
+      "html": "<a class=\"ds-ghost\" href=\"#\">Again <svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M14 5h5v5\"/><path d=\"M19 5l-8 8\"/><path d=\"M17 14v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h4\"/></svg></a>",
+      "css": ".ds-ico { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.25; stroke-linecap: round; stroke-linejoin: round; flex: none; } .ds-ghost { font-family: Figtree, system-ui, sans-serif; display: inline-flex; align-items: center; gap: 6px; height: 44px; padding-inline: 16px 14px; border-radius: 8px; background: none; color: var(--ink, #1C1D1F); box-shadow: inset 0 0 0 1.5px var(--rule-strong, #BFC1BB); font-weight: 600; font-size: 15px; text-decoration: none; } .ds-ghost:hover { background: var(--rule, #E3E4DF); } .ds-ghost:focus-visible { outline: 2px solid var(--ink, #1C1D1F); outline-offset: 2px; }"
+    },
+    {
+      "name": "Danger Button",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Confirming Remove only, beside an outline Keep it.",
+      "html": "<button class=\"ds-danger\">Remove</button> <button class=\"ds-btn\">Keep it</button>",
+      "css": ".ds-danger, .ds-btn { font-family: Figtree, system-ui, sans-serif; display: inline-flex; align-items: center; height: 44px; padding-inline: 16px; border: 0; border-radius: 8px; font-size: 15px; font-weight: 600; cursor: pointer; } .ds-danger { background: var(--danger, #B3261E); color: #fff; } .ds-btn { background: none; color: var(--ink, #1C1D1F); box-shadow: inset 0 0 0 1.5px var(--rule-strong, #BFC1BB); } .ds-btn:hover { background: var(--rule, #E3E4DF); } .ds-danger:focus-visible, .ds-btn:focus-visible { outline: 2px solid var(--ink, #1C1D1F); outline-offset: 2px; }"
+    },
+    {
+      "name": "Category Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Pill filters on the ink band; one pressed at a time, Add leads the row.",
+      "html": "<div class=\"ds-band\"><button class=\"ds-chip ds-add\">+ Add</button><button class=\"ds-chip\" aria-pressed=\"true\">All <span>12</span></button><button class=\"ds-chip\" aria-pressed=\"false\">Words <span>4</span></button></div>",
+      "css": ".ds-band { display: flex; gap: 8px; padding: 12px; background: #1C1D1F; } .ds-chip { font-family: Figtree, system-ui, sans-serif; display: inline-flex; align-items: center; gap: 6px; height: 36px; padding-inline: 14px; border: 0; border-radius: 999px; background: #2A2B2E; color: #F6F7F5; font-size: 14px; font-weight: 600; cursor: pointer; transition: background-color 0.2s cubic-bezier(0.16,1,0.3,1), color 0.2s cubic-bezier(0.16,1,0.3,1); } .ds-chip span { color: #B4B6BB; font-weight: 400; } .ds-chip[aria-pressed=\"true\"] { background: #F6F7F5; color: #1C1D1F; } .ds-chip[aria-pressed=\"true\"] span { color: #505258; } .ds-chip[aria-pressed=\"false\"]:hover { background: #34363A; } .ds-add { background: none; box-shadow: inset 0 0 0 1.5px #5A5C62; padding-inline: 12px 14px; } .ds-chip:focus-visible { outline: 2px solid #E0A82E; outline-offset: 2px; }"
+    },
+    {
+      "name": "Band Search",
+      "kind": "input",
+      "refersTo": "input-search",
+      "description": "Full-width search field inside the ink band.",
+      "html": "<div class=\"ds-band\"><label class=\"ds-search\"><svg class=\"ds-sico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"6.5\"/><path d=\"m16 16 4.5 4.5\"/></svg><input type=\"search\" placeholder=\"Search games or sites\"></label></div>",
+      "css": ".ds-band { padding: 12px; background: #1C1D1F; } .ds-sico { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.25; stroke-linecap: round; } .ds-search { display: flex; align-items: center; gap: 10px; height: 44px; padding-inline: 14px; background: #2A2B2E; border-radius: 10px; color: #B4B6BB; } .ds-search:focus-within { outline: 2px solid #E0A82E; } .ds-search input { font-family: Figtree, system-ui, sans-serif; flex: 1; min-width: 0; height: 100%; background: none; border: 0; outline: 0; color: #F6F7F5; font-size: 16px; } .ds-search input::placeholder { color: #9EA0A6; }"
+    },
+    {
+      "name": "Form Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Labelled input in the add/edit sheet.",
+      "html": "<label class=\"ds-label\">Link <input class=\"ds-input\" placeholder=\"krillion.io\"></label>",
+      "css": ".ds-label { font-family: Figtree, system-ui, sans-serif; display: grid; gap: 6px; font-size: 14px; font-weight: 600; color: var(--ink, #1C1D1F); } .ds-input { font-family: Figtree, system-ui, sans-serif; height: 44px; padding-inline: 12px; font-size: 16px; background: var(--ground, #F6F7F5); color: var(--ink, #1C1D1F); border: 1.5px solid var(--rule-strong, #BFC1BB); border-radius: 8px; } .ds-input:focus-visible { outline: 2px solid var(--ink, #1C1D1F); outline-offset: 1px; border-color: var(--ink, #1C1D1F); } .ds-input::placeholder { color: var(--ink-2, #505258); }"
+    },
+    {
+      "name": "Sheet",
+      "kind": "card",
+      "refersTo": "sheet",
+      "description": "Flat white panel with a hairline; used for the add/edit form. Notices use the same treatment at 10px corners.",
+      "html": "<div class=\"ds-sheet\"><h2>Add a game</h2><p>Games you add are saved in this browser only.</p></div>",
+      "css": ".ds-sheet { font-family: Figtree, system-ui, sans-serif; display: grid; gap: 12px; padding: 18px; background: var(--surface, #FFFFFF); border: 1px solid var(--rule, #E3E4DF); border-radius: 14px; color: var(--ink, #1C1D1F); } .ds-sheet h2 { margin: 0; font-size: 19px; font-weight: 800; } .ds-sheet p { margin: -8px 0 0; font-size: 14px; color: var(--ink-2, #505258); }"
+    },
+    {
+      "name": "Game Row",
+      "kind": "custom",
+      "refersTo": "day-square",
+      "description": "Signature row: name, site, streak, Play, then day squares ending in today's toggle square.",
+      "html": "<div class=\"ds-row\"><div class=\"ds-who\"><span class=\"ds-name\">Wordle</span><span class=\"ds-site\">nytimes.com</span></div><p class=\"ds-streak\"><b>6</b> days</p><a class=\"ds-p\" href=\"#\">Play</a><div class=\"ds-days\"><i></i><i class=\"on\"></i><i class=\"on\"></i><i></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><button class=\"ds-today\" aria-pressed=\"false\" aria-label=\"Played Wordle today\"><svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m5 12.5 4.5 4.5L19 7.5\"/></svg></button></div></div>",
+      "css": ".ds-row { font-family: Figtree, system-ui, sans-serif; display: grid; grid-template-columns: minmax(0,1fr) auto auto; grid-template-areas: \"who streak play\" \"days days days\"; align-items: center; gap: 12px 14px; padding: 14px 0 16px; border-bottom: 1px solid var(--rule, #E3E4DF); color: var(--ink, #1C1D1F); font-variant-numeric: tabular-nums; } .ds-who { grid-area: who; display: grid; } .ds-name { font-size: 19px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.25; } .ds-site { font-size: 13px; color: var(--ink-2, #505258); } .ds-streak { grid-area: streak; margin: 0; font-size: 13px; color: var(--ink-2, #505258); } .ds-streak b { font-size: 19px; font-weight: 800; color: var(--ink, #1C1D1F); } .ds-p { grid-area: play; display: inline-flex; align-items: center; height: 44px; padding-inline: 16px; border-radius: 8px; background: var(--ink, #1C1D1F); color: var(--ground, #F6F7F5); font-weight: 800; font-size: 15px; text-decoration: none; } .ds-days { grid-area: days; display: grid; grid-template-columns: repeat(14, minmax(0,1fr)); gap: 4px; } .ds-days i { aspect-ratio: 1; border-radius: 3px; background: var(--empty, #DFE0DB); } .ds-days i.on { background: var(--green, #2F9E57); } .ds-today { position: relative; aspect-ratio: 1; width: 100%; padding: 0; border: 0; border-radius: 3px; background: none; box-shadow: inset 0 0 0 2px var(--today, #A8740F); color: transparent; display: grid; place-items: center; cursor: pointer; transition: background-color 0.25s cubic-bezier(0.16,1,0.3,1), box-shadow 0.25s cubic-bezier(0.16,1,0.3,1); } .ds-today::after { content: \"\"; position: absolute; inset: -11px; } .ds-today .ds-ico { width: 72%; height: 72%; stroke-width: 3; } .ds-today:hover { background: color-mix(in srgb, var(--today, #A8740F) 18%, transparent); } .ds-today[aria-pressed=\"true\"] { background: var(--green, #2F9E57); box-shadow: none; color: #fff; } .ds-today:focus-visible { outline: 2px solid var(--ink, #1C1D1F); outline-offset: 2px; } .ds-ico { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.25; stroke-linecap: round; stroke-linejoin: round; flex: none; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Share Grid",
+    "overview": "**Creative North Star: \"The Share Grid\"**\n\nDaily borrows the one visual language its users already trade every morning: rows of little coloured squares pasted into a group chat. Every game is a row; every day is a square; today's square is the control. The page is a ledger of those rows under a sticky ink band, on cool paper, with nothing decorative competing with the grid.\n\nThe system is flat, dense and tabular. Depth comes only from the ink band against the paper ground and from hairline rules between rows; there is no elevation. Colour is almost entirely neutral until a game is played, and then green does all the talking. Type is one family, Figtree, worked hard: heavy 800 names and figures against a plain 400 body, with tabular numerals everywhere so counts and streaks never jitter.\n\nMotion is a single moment: a square stamps (scales down from 1.45 into place), then the row glides to its new group through a view transition on an exponential ease-out. Under reduced motion all of it is off.",
+    "keyCharacteristics": [
+      "Day squares are the primary visual unit and the primary control.",
+      "One sticky ink band carries brand, date, the remaining-count, today's tally, search and category chips.",
+      "Flat surfaces, hairline rules, no shadows for depth.",
+      "Green means played, amber/ochre means today, grey means empty. Nothing else is coloured.",
+      "Light and dark follow the system setting; the band keeps its own dark palette in both."
+    ],
+    "rules": [
+      {
+        "name": "The Green Means Played Rule",
+        "body": "Green appears only where something has been played (or text is selected). Never use it for a link, a button, a heading or decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Signals Rule",
+        "body": "Only green and today's ochre/amber carry meaning in the list. Everything else is ink, graphite or paper.",
+        "section": "colors"
+      },
+      {
+        "name": "The Band Keeps Its Palette Rule",
+        "body": "The ink band is dark in both themes and uses its own band, band-2, on-band, on-band-2 and amber tokens; never put ground-palette tokens on it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Heavy Name, Heavy Number Rule",
+        "body": "Names and figures are 800; everything that explains them is 400 or 600 at a smaller size. Don't introduce intermediate display weights.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Figures Rule",
+        "body": "All numerals are tabular, so counts and streaks keep their width as they change.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ink Band Is The Only Layer Rule",
+        "body": "The sticky band is the one thing that sits above the content. Sheets and notices stay in the page flow with a hairline, not a shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** make every game a row ending in today's square, and make that square the mark-played control.",
+      "**Do** keep every tap target at least 44px, extending small squares with an invisible hit area rather than enlarging them.",
+      "**Do** pair every played state with a non-colour signal: `aria-pressed`, a check icon, an \"Again\" label, or screen-reader text.",
+      "**Do** use 800 weight for names and figures and tabular numerals for every count.",
+      "**Do** use #A8740F for today's outline on the light ground and #E0A82E on dark surfaces and the band.",
+      "**Do** keep motion to the stamp-and-glide moment on the cubic-bezier(0.16, 1, 0.3, 1) ease, and turn it off under reduced motion."
+    ],
+    "donts": [
+      "**Don't** present games as a grid of icon cards with checkmarks; the row of squares is the system.",
+      "**Don't** add drop shadows or elevated cards; containers are flat with a hairline.",
+      "**Don't** use green for anything other than played (and selection).",
+      "**Don't** use other games' logos or trademarks as decoration.",
+      "**Don't** put ground-palette tokens on the ink band, or band tokens on the paper."
+    ]
+  }
+}

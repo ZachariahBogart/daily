@@ -1,0 +1,44 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/assigned.html"
+        ],
+        "createdAt": "2026-11-16T14:55:44.354Z",
+        "reason": "agent: spent decision-round sketch of an unchosen or pre-build direction; not shipped, predates DESIGN.md"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/model-pick.html"
+        ],
+        "createdAt": "2026-11-16T14:55:45.192Z",
+        "reason": "agent: spent decision-round sketch of an unchosen or pre-build direction; not shipped, predates DESIGN.md"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/challenger-gateboard.html"
+        ],
+        "createdAt": "2026-11-16T14:55:46.144Z",
+        "reason": "agent: spent decision-round sketch of an unchosen or pre-build direction; not shipped, predates DESIGN.md"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/challenger-bitmap.html"
+        ],
+        "createdAt": "2026-11-16T14:55:47.149Z",
+        "reason": "agent: spent decision-round sketch of an unchosen or pre-build direction; not shipped, predates DESIGN.md"
+      }
+    ]
+  }
+}

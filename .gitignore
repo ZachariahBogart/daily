@@ -1,0 +1,9 @@
+# local preview config (contains machine paths)
+.claude/
+# Impeccable runtime and scratch output
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/questions/
+.impeccable/live/
+.impeccable/config.local.json
+.impeccable/hook.cache.json
