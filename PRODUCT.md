@@ -45,7 +45,8 @@ It is the owner's own curated daily-games shelf with memory: it knows what you p
 
 - Confirmed games: Wordle, krillion.io.
 - The rest of the starter list is to be authored as a realistic set of popular daily games across categories, for the owner to prune. The owner will supply more games to add after the first build.
-- No logos or screenshots of third-party games are on hand; do not use other games' trademarks as decoration.
+- Landing-page screenshots of each shared game live in `previews/`, captured with ads blocked by `tools/capture-previews.mjs` (first captured 2026-11-16). They appear only as previews of the linked site. Don't use other games' logos or trademarks as decoration elsewhere.
+- Games visitors add themselves have no screenshot (there is no server to capture one); they show a letter tile instead.
 
 ## Product Principles
 

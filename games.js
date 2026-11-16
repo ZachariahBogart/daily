@@ -1,6 +1,7 @@
 // The shared list everyone with the link sees. Edit this file to change it.
 // Each game needs: id (unique, lowercase, never change it or its streaks reset),
 // name, url, and category. Categories appear as tabs in the order they first show up here.
+// After adding a game, run `node tools/capture-previews.mjs <id>` to make its preview screenshots.
 window.DAILY_GAMES = [
   { id: "wordle",       name: "Wordle",       url: "https://www.nytimes.com/games/wordle/",      category: "Word" },
   { id: "connections",  name: "Connections",  url: "https://www.nytimes.com/games/connections",  category: "Word" },

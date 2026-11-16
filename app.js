@@ -191,6 +191,17 @@
       h("ul", { class: "games" }, list.map(row)));
   }
 
+  // Landing-page screenshots live in previews/ (made by tools/capture-previews.mjs) for shared games only.
+  function shot(g, thumb) {
+    const mono = () => h("span", { class: "mono" }, g.name.trim().charAt(0).toUpperCase());
+    if (!g.shared) return thumb ? mono() : null;
+    const img = h("img", { src: `previews/${encodeURIComponent(g.id)}${thumb ? "-thumb" : ""}.webp`, alt: thumb ? "" : `The ${g.name} home page`,
+      width: thumb ? 192 : 768, height: thumb ? 120 : 480, loading: thumb ? "lazy" : "eager", decoding: "async" });
+    img.addEventListener("error", () => { if (thumb) img.replaceWith(mono()); else img.closest(".shot")?.remove(); });
+    return img;
+  }
+  const toggleOpen = (g, open) => { openId = open ? null : g.id; confirmId = null; render(`[data-open="${g.id}"]`); };
+
   function row(g) {
     const days = state.played[g.id] || [];
     const set = new Set(days);
@@ -202,9 +213,11 @@
     const did = "d-" + vtName(g.id);
 
     return h("li", { class: `game${done ? " done" : ""}${open ? " open" : ""}`, style: `view-transition-name:${vtName(g.id)}` },
+      // the thumbnail repeats the name button for pointer users, so it stays out of the tab order
+      h("button", { type: "button", class: "thumb", tabindex: "-1", "aria-hidden": "true", onclick: () => toggleOpen(g, open) }, shot(g, true)),
       h("div", { class: "who" },
         h("button", { type: "button", class: "name", "aria-expanded": String(open), "aria-controls": did, "data-open": g.id,
-          onclick: () => { openId = open ? null : g.id; confirmId = null; render(`[data-open="${g.id}"]`); } },
+          onclick: () => toggleOpen(g, open) },
           g.name, done ? h("span", { class: "sr" }, " (played today)") : ""),
         h("span", { class: "site" }, L.host(g.url), g.shared ? "" : h("span", { class: "tag" }, "yours"))),
       h("p", { class: `streak${s ? "" : " zero"}` }, h("b", {}, s), s === 1 ? " day" : " days", h("span", { class: "sr" }, " streak")),
@@ -222,7 +235,9 @@
 
   function details(g, did) {
     const asking = confirmId === g.id;
-    return h("div", { class: "more", id: did },
+    const big = shot(g, false);
+    return h("div", { class: `more${big ? " with-shot" : ""}`, id: did },
+      big ? h("a", { class: "shot", href: g.url, target: "_blank", rel: "noopener noreferrer" }, big, h("span", { class: "sr" }, " (opens in a new tab)")) : "",
       h("a", { class: "url", href: g.url, target: "_blank", rel: "noopener noreferrer" }, g.url),
       h("span", { class: "cat" }, g.category || "Other"),
       g.shared ? "" : h("div", { class: "actions" },
