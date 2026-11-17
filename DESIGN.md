@@ -293,6 +293,9 @@ Marking played scales the square from 1.45 to 1 over 0.42s on the system ease, t
 ### Today Tally
 A single row of squares (up to 12px, shrinking as the list grows so it never wraps; 2px corners, 3px gap) under the band's top line, one per game, filling green from the left as games are played. Decorative (`aria-hidden`); the remaining-count text carries the meaning.
 
+### Remove
+Every game's opened details end with a secondary Remove button. Your own games also have Edit before it. Remove swaps in a two-step confirm: the question in 600 weight, then a danger-filled Remove and a secondary "Keep it", with focus moved to "Keep it". There is no undo or hidden list. Re-adding the link through the add form restores a removed shared game.
+
 ### Site Previews
 Each shared game shows a 16:10 screenshot of its landing page (top-anchored, `object-fit: cover`, 1px rule border, `--empty` behind it). In the row it is a thumbnail in its own leading column: 56px wide on phones and 88px from 860px up, with an 8px radius. It repeats the name button (`tabindex="-1"`, `aria-hidden`) and drops to 60% opacity once the game is played. When a row opens, a large preview (10px radius, at most 560px wide) leads the details and links to the game. From 860px up it sits left of the link, category and actions. Games without a screenshot (your own additions, or a failed load) get a monogram tile: the first letter in 19px/800 `--ink-2` on `--empty`, and no large preview. Screenshots come from `tools/capture-previews.mjs`, never from a runtime service.
 

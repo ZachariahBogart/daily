@@ -21,5 +21,7 @@ assert.equal(L.normalizeUrl("ftp://x.com"), null);
 assert.equal(L.normalizeUrl("notaurl"), null);
 assert.equal(L.normalizeUrl(""), null);
 assert.equal(L.host("https://www.nytimes.com/games/wordle/"), "nytimes.com");
+assert.equal(L.urlKey("https://www.nytimes.com/games/strands"), L.urlKey(L.normalizeUrl("nytimes.com/games/strands/")));
+assert.notEqual(L.urlKey("https://nytimes.com/games/strands"), L.urlKey("https://nytimes.com/games/wordle"));
 
 console.log("all tests passed");

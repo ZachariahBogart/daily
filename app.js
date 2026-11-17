@@ -20,7 +20,9 @@
     const added = Array.isArray(s && s.added) ? s.added.filter((g) =>
       g && typeof g.id === "string" && typeof g.name === "string" && L.normalizeUrl(g.url)) : [];
     const played = s && s.played && typeof s.played === "object" ? s.played : {};
-    return { added, played };
+    // shared games this browser removed; adding the same link again brings them back
+    const removed = Array.isArray(s && s.removed) ? s.removed.filter((id) => typeof id === "string") : [];
+    return { added, played, removed };
   }
   function save() {
     try { localStorage.setItem(KEY, JSON.stringify(state)); storageOk = true; }
@@ -56,10 +58,12 @@
     return new Intl.DateTimeFormat(undefined, opts).format(new Date(y, m - 1, d));
   };
   const vtName = (id) => "g-" + id.replace(/[^a-z0-9-]/gi, "-");
+  const shared = () => (window.DAILY_GAMES || []).map((g) => ({ ...g, shared: true }));
   const games = () => [
-    ...(window.DAILY_GAMES || []).map((g) => ({ ...g, shared: true })),
+    ...shared().filter((g) => !state.removed.includes(g.id)),
     ...state.added.map((g) => ({ ...g, shared: false })),
   ];
+  const removedGames = () => shared().filter((g) => state.removed.includes(g.id));
   const playedToday = (id) => (state.played[id] || []).includes(today);
   const categories = (list) => [...new Set(list.map((g) => g.category || "Other"))];
   const matches = (g) => {
@@ -81,6 +85,14 @@
     if (document.startViewTransition && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
       document.startViewTransition(go);
     } else go();
+  }
+
+  function remove(g) {
+    if (g.shared) { if (!state.removed.includes(g.id)) state.removed.push(g.id); }
+    else state.added = state.added.filter((x) => x.id !== g.id);
+    delete state.played[g.id];
+    save(); openId = null; confirmId = null;
+    render("#q");
   }
 
   function openForm(game, presetName) {
@@ -106,11 +118,16 @@
     let err = "";
     if (!name) err = "Give the game a name.";
     else if (!url) err = "That link doesn't look like a web address. Try something like krillion.io.";
-    else if (games().some((g) => g.url === url && g.id !== editing)) err = "That game is already on your list.";
+    else if (games().some((g) => L.urlKey(g.url) === L.urlKey(url) && g.id !== editing)) err = "That game is already on your list.";
     if (err) { els.formErr.textContent = err; (name ? f.url : f.name).focus(); return; }
 
     let id = editing;
-    if (editing === "new") {
+    const back = editing === "new" && removedGames().find((g) => L.urlKey(g.url) === L.urlKey(url));
+    if (back) {
+      // a shared game this browser removed earlier: restore it rather than adding a copy
+      id = back.id;
+      state.removed = state.removed.filter((x) => x !== id);
+    } else if (editing === "new") {
       id = "u" + Date.now().toString(36);
       state.added.push({ id, name, url, category });
     } else {
@@ -240,14 +257,12 @@
       big ? h("a", { class: "shot", href: g.url, target: "_blank", rel: "noopener noreferrer" }, big, h("span", { class: "sr" }, " (opens in a new tab)")) : "",
       h("a", { class: "url", href: g.url, target: "_blank", rel: "noopener noreferrer" }, g.url),
       h("span", { class: "cat" }, g.category || "Other"),
-      g.shared ? "" : h("div", { class: "actions" },
+      h("div", { class: "actions" },
         asking
-          ? [h("span", { class: "ask" }, `Remove ${g.name} and its streak?`),
-             h("button", { type: "button", class: "btn danger", "data-rm": g.id, onclick: () => {
-               state.added = state.added.filter((x) => x.id !== g.id); delete state.played[g.id];
-               save(); openId = null; confirmId = null; render("#q"); } }, "Remove"),
+          ? [h("span", { class: "ask" }, `Remove ${g.name} and its streak from your list?`),
+             h("button", { type: "button", class: "btn danger", "data-rm": g.id, onclick: () => remove(g) }, "Remove"),
              h("button", { type: "button", class: "btn", "data-keep": g.id, onclick: () => { confirmId = null; render(`[data-open="${g.id}"]`); } }, "Keep it")]
-          : [h("button", { type: "button", class: "btn", onclick: () => openForm(g) }, "Edit"),
+          : [g.shared ? "" : h("button", { type: "button", class: "btn", onclick: () => openForm(g) }, "Edit"),
              h("button", { type: "button", class: "btn", "data-ask": g.id, onclick: () => { confirmId = g.id; render(`[data-keep="${g.id}"]`); } }, "Remove")]));
   }
 

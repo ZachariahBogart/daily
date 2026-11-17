@@ -38,7 +38,12 @@
     try { return new URL(url).hostname.replace(/^www\./, ""); } catch { return String(url); }
   };
 
-  const api = { dayKey, shift, lastDays, streak, normalizeUrl, host };
+  // Same game regardless of "www.", letter case in the host, or a trailing slash.
+  const urlKey = (url) => {
+    try { const u = new URL(url); return host(url).toLowerCase() + u.pathname.replace(/\/+$/, "") + u.search; } catch { return String(url); }
+  };
+
+  const api = { dayKey, shift, lastDays, streak, normalizeUrl, host, urlKey };
   if (typeof module === "object" && module.exports) module.exports = api;
   else root.DailyLib = api;
 })(this);

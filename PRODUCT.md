@@ -37,9 +37,10 @@ It is the owner's own curated daily-games shelf with memory: it knows what you p
 - **Views:** the whole list, or one category at a time.
 - **Search:** filter games by name or site.
 - **Personal additions:** any visitor can add their own games in the page; they are stored only in that browser and are not shared with anyone.
+- **Removing games:** any visitor can remove any game from their own list (Remove in its details, then a confirm step). That deletes it and its streak on that browser only; the shared list and everyone else's lists are unchanged. Adding a removed shared game's link again with + Add brings it back from the shared list.
 - **Daily state:** mark a game played today; it clears at local midnight. Each game keeps a streak of consecutive days played.
 - **No accounts, no server, no sync across devices.** Clearing browser data loses personal additions and streaks.
-- **Undecided:** whether visitors can hide or reorder shared games; whether personal additions can be exported/imported.
+- **Undecided:** whether visitors can reorder games; whether personal additions can be exported/imported.
 
 ## Evidence on Hand
 
